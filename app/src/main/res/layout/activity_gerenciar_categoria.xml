@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/container"
+    tools:context=".view.GerenciarCategoriaActivity">
+
+
+    <EditText
+        android:hint="Nome da Categoria"
+        android:id="@+id/editNomeCategoria"
+        style="@style/EditText" />
+
+    <Button
+        style="@style/Button"
+        android:text="Salvar"
+        android:id="@+id/btSalvarCategoria"
+        android:onClick="salvarCategoria" />
+
+    <ListView
+        android:id="@+id/lvCategorias"
+        style="@style/ListView"></ListView>s
+
+</LinearLayout>

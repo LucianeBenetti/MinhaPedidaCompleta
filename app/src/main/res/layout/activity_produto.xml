@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/container"
+    tools:context=".view.ProdutoActivity">
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/adicionandoProduto" />
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/produto"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spProduto"
+        style="@style/Spinner"></Spinner>
+
+    <TextView
+        style="@style/TextViewProduto"
+        android:text="@string/quantidade"
+        android:gravity="center"
+        android:textSize="16sp" />
+
+    <NumberPicker
+        android:id="@+id/npQtdade"
+        style="@style/NumberPicker"></NumberPicker>
+
+    <Button
+        android:text="@string/enviar"
+        style="@style/Button"
+        android:id="@+id/btEnviar"
+        android:onClick="enviar" />
+
+    <Button
+        android:text="Cancelar"
+        style="@style/Button"
+        android:id="@+id/btCancelar"
+        android:onClick="cancelar" />
+
+    <Button
+        android:text="Gerenciar Produto"
+        style="@style/Button"
+        android:id="@+id/btGerProduto"
+        android:onClick="gerenciarProduto" />
+
+</LinearLayout>

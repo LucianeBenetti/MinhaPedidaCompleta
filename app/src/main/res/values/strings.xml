@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MinhaPedidaCompleta</string>
+    <string name="minhaComanda">Minha Comanda</string>
+    <string name="hint_total">Total $$$$$$$$</string>
+    <string name="enviar">Enviar</string>
+    <string name="adicionarProduto">Adicionar Produto</string>
+    <string name="adicionandoProduto">Adicionando Produto</string>
+    <string name="produto">Produto</string>
+    <string name="quantidade">Quantidade</string>
+    <string name="limparLista">Limpar Lista</string>
+    <string name="acao_cancelada">Ação cancelada</string>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    style="@style/container"
+    tools:context=".view.GerenciarProdutoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spCategoria"
+            style="@style/SpinnerProduto"></Spinner>
+
+        <Button
+            style="@style/ButtonProduto"
+            android:onClick="telaAddItemCategoria"
+            android:text="Adicionar" />
+
+    </LinearLayout>
+
+    <EditText
+        android:hint="Nome do Produto"
+        android:id="@+id/editNomeProduto"
+        style="@style/EditText" />
+
+    <EditText
+        style="@style/EditText"
+        android:hint="Valor"
+        android:id="@+id/editValor" />
+
+
+    <Button
+        style="@style/Button"
+        android:text="Salvar"
+        android:id="@+id/btSalvarProduto"
+        android:onClick="salvarProduto" />
+
+    <ListView
+        android:id="@+id/lvGerenciarProdutos"
+        style="@style/ListView"></ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/container"
+    tools:context=".view.ItemActivity">
+
+    <TextView
+        android:text="@string/minhaComanda"
+        style="@style/TextView" />
+
+    <Button
+        style="@style/Button"
+        android:text="@string/adicionarProduto"
+        android:id="@+id/btAdicionarProduto"
+        android:onClick="adicionarProduto" />
+
+    <Button
+        android:text="@string/limparLista"
+        style="@style/Button"
+        android:id="@+id/btLimparLista"
+        android:onClick="limparLista" />
+
+    <TextView
+        android:hint="@string/hint_total"
+        style="@style/TextView"
+        android:id="@+id/tvTotal" />
+
+    <ListView
+        android:id="@+id/lvItens"
+        style="@style/ListView"></ListView>
+
+</LinearLayout>
